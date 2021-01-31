@@ -9,20 +9,21 @@
   </div>
   <div class="panel-body" style="min-height: 500px; overflow-x: scroll; ">
     <table class="table table-bordered table-striped DataTablePrint">
+      <?php $jumlhJenjang = count($listJenjang); ?>
+
       <thead>
         <tr>
           <th style="text-align: center; vertical-align: middle;" class="text-center" rowspan="3">No</th>
           <th style="text-align: center; vertical-align: middle;" rowspan="3">Status Akreditasi</th>
-
         </tr>
         <tr>
-          <th colspan="3">Akademik</th>
+          <th colspan="<?= $jumlhJenjang ?>">Akademik</th>
           <th style="text-align: center; vertical-align: middle;" rowspan="3">Total</th>
         </tr>
         <tr>
-          <th>S-3</th>
-          <th>S-2</th>
-          <th>S-1</th>
+          <?php foreach ($listJenjang as $jjg) : ?>
+            <th><?= $jjg->jenjang_nama ?></th>
+          <?php endforeach ?>
         </tr>
         <tr>
           <th>(1)</th>
