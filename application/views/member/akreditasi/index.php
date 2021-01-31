@@ -55,7 +55,7 @@
               <td class=""><a href="<?php echo base_url('admin/prodi/breakdown_prodi/' . $id_sub_jenjang . '/' . $value->akreditasi_id) ?>"><?= $jml; ?></a></td>
             <?php endforeach; ?>
 
-            <td class=""><a href="<?php echo base_url('admin/prodi/breakdown_prodi/' . $id_sub_jenjang . '/' . $value->akreditasi_id) ?>"><?= $total; ?></a></td>
+            <td class=""><a class="badge badge-danger" href="<?php echo "#jumlah" ?>"><?= $total; ?></a></td>
           </tr>
         <?php endforeach; ?>
       </tbody>
