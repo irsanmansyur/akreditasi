@@ -1,5 +1,7 @@
 <div class="panel panel-default">
-  <div class="panel-heading clearfix">
+  <?php $this->load->view("_include/alert"); ?>
+
+  <div class="panel-heading clearfix mt-2">
     <span class="pull-left"><?= $title ?></span>
   </div>
   <div class="panel-body" style="min-height: 500px; overflow-x: scroll; ">
