@@ -52,20 +52,19 @@
   </div>
 </div>
 
-<link rel="stylesheet" href="<?= base_url('assets/vendor/sweetalert2/dist/sweetalert2.min.css')?>">
-<script src="<?= base_url("assets/vendor/sweetalert2/dist/sweetalert2.min.js")?>"></script>
+<link rel="stylesheet" href="<?= base_url('assets/vendor/sweetalert2/dist/sweetalert2.min.css') ?>">
+<script src="<?= base_url("assets/vendor/sweetalert2/dist/sweetalert2.min.js") ?>"></script>
 <script>
-
-// CommonJS
-const tableMe = document.querySelector("table");
-tableMe.addEventListener("click",function(e){
-    if(e.target.classList.contains("no-sertifikat")){
-        Swal.fire({
-      title: 'Error!',
-      text: 'Tidak Ada Sertifikat',
-      icon: 'error',
-      confirmButtonText: 'Cool'
-    })
-  }
-})
+  // CommonJS
+  const tableMe = document.querySelector("table");
+  tableMe.addEventListener("click", function(e) {
+    if (e.target.classList.contains("no-sertifikat")) {
+      Swal.fire({
+        title: 'Error!',
+        text: 'Tidak Ada Sertifikat',
+        icon: 'error',
+        confirmButtonText: 'Cool'
+      })
+    }
+  })
 </script>

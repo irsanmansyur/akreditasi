@@ -74,13 +74,29 @@ class Fakultas extends CI_Controller
   {
     if ($this->db->where("id_fakultas", $id)->get("tbl_prodi")->row()) {
       $this->session->set_flashdata("danger", "Mohon Maaf Ada Tabel Prodi yang bersangkutan, Fakultas Gagal Di hapus");
+      return $this->output->set_content_type('application/json')
+        ->set_output(json_encode([
+          'status' => false,
+          "message" => "Masih Ada data prodi"
+        ]));
     } else {
       if ($this->m_crud->delete('tbl_fakultas', $id)) {
         $this->m_umum->generatePesan('Berhasil Menghapus Data', 'berhasil');
+        return $this->output->set_content_type('application/json')
+          ->set_output(json_encode([
+            'status' => true,
+            "message" => "Sukses menghapus fakultas"
+          ]));
       } else {
         $this->m_umum->generatePesan('Gagal Menghapus Data', 'gagal');
+        return $this->output->set_content_type('application/json')
+          ->set_output(json_encode([
+            'status' => false,
+            "message" => "Gagal menghapus fakultas"
+          ]));
       }
     }
+
     redirect($_SERVER['HTTP_REFERER']);
   }
 }
