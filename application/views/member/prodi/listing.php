@@ -29,7 +29,7 @@
 					foreach ($listing as $listing) { ?>
 						<tr>
 							<td><?php echo $i ?></td>
-							<td><?php echo $listing->subjenjang_nama ?></td>
+							<td><?php echo $listing->jenjang_nama ?></td>
 							<td><?php echo $listing->fakultas_nama ?></td>
 							<td><?php echo $listing->prodi_nama ?></td>
 							<td><?php echo $listing->no_sk ?></td>

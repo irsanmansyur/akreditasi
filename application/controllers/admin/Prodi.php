@@ -180,14 +180,11 @@ class Prodi extends CI_Controller
         "subjenjang"  => $this->m_crud->getdata('tbl_subjenjang')->result(),
         "fakultas"    => $this->m_crud->getdata('tbl_fakultas')->result(),
         "akreditasi"  => $this->m_crud->getdata('tbl_akreditasi')->result(),
-        "pilihan"    => $this->db->query("SELECT *
-FROM tbl_prodi, tbl_jenjang, tbl_subjenjang, tbl_fakultas, tbl_akreditasi
-WHERE tbl_prodi.id_fakultas = tbl_fakultas.fakultas_id
-AND tbl_prodi.id_subjenjang = tbl_subjenjang.subjenjang_id
-AND tbl_prodi.id_akreditasi = tbl_akreditasi.akreditasi_id
-AND tbl_prodi.id_jenjang = tbl_jenjang.jenjang_id 
-AND prodi_id = $baiklah")->row(),
-
+        "pilihan"    => $this->db->query("SELECT * FROM tbl_prodi, tbl_jenjang, tbl_subjenjang, tbl_fakultas, tbl_akreditasi
+                          WHERE tbl_prodi.id_fakultas = tbl_fakultas.fakultas_id
+                          AND tbl_prodi.id_subjenjang = tbl_jenjang.jenjang_id
+                          AND tbl_prodi.id_akreditasi = tbl_akreditasi.akreditasi_id
+                          AND prodi_id = $baiklah")->row(),
       ];
       $this->load->view('layout', $data);
 
