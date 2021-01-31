@@ -1,0 +1,6 @@
+{
+    "require": {
+        "phpmailer/phpmailer": "^6.1",
+        "raiym/instagram-php-scraper": "^0.9.8"
+    }
+}

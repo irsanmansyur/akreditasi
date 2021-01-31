@@ -1,0 +1,12 @@
+{
+    "name": "rizky/amanda-stemming",
+    "authors": [
+        {
+            "name": "Rizky Muhammad",
+            "email": "rizky@kpptechnology.co.id"
+        }
+    ],
+    "require": {
+        "sastrawi/sastrawi": "^1"
+    }
+}

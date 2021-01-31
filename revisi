@@ -1,0 +1,26 @@
+(done) Bikin department tujuannya untuk siapa ( ob tidak boleh memesan ruangan )
+
+(done) Di Penjadwalan harus ada nama ruang meetingnya 
+
+(done) Di jadwal jam terakhir misalkan 18.30 tidak bisa memesan ( jammnya diharuskan fleksible saja ) atau bisa kapanpun
+
+(to be check)Saat ingin memesan ruangan tampilin nya jangan ruangannya dulu kalo bisa jadwalnya dulu, seperti ingin memesan tiket pesawat gitu deh
+
+(to be check) Dijam nya kalo pemesan sudah selesai memakai ruangan jamnya harus ter-refresh kembali agar ruangan yg sudah dipesan bisa dipesan kembali
+
+(done)Bikin Tampilan Report/selesai nya ketika sudah berhasil memesan jadi ada data outputnya seperti apa
+
+(masuk ke notifikasi) kalau sudah selesai meeting harus ketauan jam selesainya, jadi kalo blm dibikin seperti itu kita tidak tau kapan si org itu selesai meeting kalo tidak ada peringatannya
+
+(to be check)Bikin reminder pengingat entah itu button ruangan yg sudah dibooking/ready biar gampang dicari jadi jelas ruangannya
+
+(Done) Di profile member jangan ditulis member karena tergantung si pemesan nya siapa jadi menyesuaikan dari hasil loginnya saja misal dia dari department apa terus yg memesan produser atau yg lainnya ( ada difoto )
+
+(traveloka) Tampilan jadwal pemesanan nya diganti saja (ada difoto) dosennya pusing kalo ngeliat tampilan jadwal kaya gitu katanya ( kalo bisa tampilan penjadwalnnya ngikutin seperti pemesanan traveloka atau aplikasi pemesanan ruang meeting yg lain)
+
+(di history)Bikin Search status yg mana saja yg dibook tgl berapa aja gitu deh kata dosen nya, pusing juga saya.
+(to be check) ganti foto
+
+
+logo user
+notifikasi Email + navbar

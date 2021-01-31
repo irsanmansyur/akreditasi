@@ -1,0 +1,30 @@
+Hallo Kak,
+
+Untuk pembuatan Aplikasi Pemesanan Ruang Pertemuan nya menggunakan metode First in First Out (FIFO) dimana yang memesan tempat pertama ialah yang mendapatkan tempat tersebut, guna pembuatan aplikasi ini tentunya supaya pemesan tidak harus datang ketempat lagi untuk memesan dan ketika sudah sampai di resepsionis hanya tinggal validasi saja.
+
+1)Dengan Spesifikasi Ruangan ada 5 yaitu :
+Doc One
+Fasilitas = 6 bangku + 1 meja kecil + 1 ac + 1 papan tulis
+News One
+Fasilitas = 8 bangku 1 meja kecil 1 ac + 1 papan tulis
+Theater One
+Fasilitas = 10 bangku 2 meja besar 2 ac
+Sport One =
+Fasilitas = 7 bangku 1 meja kecil 1 ac + 1 papan tulis
+Reality One =
+Fasilitas = 15 bangku 3 meja besar 3 ac + 1 proyektor
+2) Tanggal Pemesanan
+3) Waktu Pemesanan dari jam 12 pagi sampai jam 9 malam
+4) Data Pemesan :
+- Nama Lengkap
+- Program ( misal Indonesia Lawyers Club )
+- No. Handphone
+- Email
+- Posisi ( misal produser,reporter atau yg lainnya )
+
+*Noted :
+- Untuk gambar ruangannya saya blm ada
+- Jika ada yang kurang boleh ditambahkan kak
+
+Untuk Penulisan Bab 4
+- Sejarah dan Strukturnya sudah saya buat dilampiran, tolong dilanjutin dan diselesaikan ya kak karena saya kurang paham dengan analisa sistem nya di bab 4 ini.
