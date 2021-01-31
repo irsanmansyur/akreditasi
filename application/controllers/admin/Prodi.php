@@ -88,12 +88,17 @@ class Prodi extends CI_Controller
         'daluarsa'     => $post['daluarsa'],
         'id_akreditasi' => $post['id_akreditasi'],
       ];
+      if ($_FILES['sertifikat']['name'] && $insert["sertifikat"] == $prodi->sertifikat) {
+        return redirect('admin/prodi/edit/' . $id);
+      }
       $update = $this->db->where("prodi_id", $id)->update('tbl_prodi', $insert);
       if ($update) {
+        $this->session->set_flashdata("success", "Berhasil Mengubah Data");
         $this->m_umum->generatePesan('Berhasil Mengubah Data', 'berhasil');
       } else {
+        $this->session->set_flashdata("danger", "gagal Mengubah Data");
         $this->m_umum->generatePesan('Gagal Mengubah Data', 'gagal');
-        return redirect('admin/prodi/edit');
+        return redirect('admin/prodi/edit/' . $id);
       }
       return redirect('admin/prodi');
     }
@@ -112,7 +117,7 @@ class Prodi extends CI_Controller
   private function upload($filename = '')
   {
     if ($_FILES['sertifikat']['name']) {
-      $config['allowed_types'] = 'gif|jpg|jpeg|png';
+      $config['allowed_types'] = 'pdf';
       $config['max_size']      = '2048';
       $config['upload_path'] = './uploads/sertifikat/';
       $this->load->library('upload', $config);
